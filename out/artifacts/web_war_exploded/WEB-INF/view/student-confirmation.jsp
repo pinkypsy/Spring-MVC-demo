@@ -20,6 +20,15 @@
     Student A: "${student.age}"
     <br>
     Student country: "${student.country}"
+    <br>
+    Favorite language: "${student.favoriteLang}"
+    <br>
+    Operation systems:
+    <ul>
+    <c:forEach var="temp" items="${student.operationSystemOptions}">
+    <li>${temp}</li>
+    </c:forEach>
+    </ul>
 </p>
 <br>
 <p>

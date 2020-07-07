@@ -8,6 +8,33 @@ public class Student {
     private String lastName;
     private int age;
     private String country;
+    private String favoriteLang;
+    private String [] operationSystemOptions;
+
+    public String[] getOperationSystemOptions() {
+        return operationSystemOptions;
+    }
+
+    public void setOperationSystemOptions(String[] operationSystemOptions) {
+        this.operationSystemOptions = operationSystemOptions;
+    }
+
+    //adding radio buttons w/ map
+    private LinkedHashMap<String, String> favoriteLanguageOptions;
+
+    public Student() {
+        // populate favorite language options
+        favoriteLanguageOptions = new LinkedHashMap<>();
+
+        // parameter order: value, display label
+        favoriteLanguageOptions.put("Java", "Java");
+        favoriteLanguageOptions.put("C#", "C#");
+        favoriteLanguageOptions.put("PHP", "PHP");
+        favoriteLanguageOptions.put("Ruby", "Ruby");
+    }
+
+
+//    adding options with map
 //    private LinkedHashMap<String,String> countries;
 //
 //    public Student() {
@@ -52,4 +79,18 @@ public class Student {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    public String getFavoriteLang() {
+        return favoriteLang;
+    }
+
+    public void setFavoriteLang(String favoriteLang) {
+        this.favoriteLang = favoriteLang;
+    }
+
+    public LinkedHashMap<String, String> getFavoriteLanguageOptions() {
+        return favoriteLanguageOptions;
+    }
+
+
 }

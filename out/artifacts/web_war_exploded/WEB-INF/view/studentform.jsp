@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="for" uri="http://www.springframework.org/tags/form" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -26,6 +27,21 @@
                 <form:select path="country">
                     <form:options items="${theCountryOptions}" /> <%--It means student.getCountries() which returns Hash Map countries--%>
                 </form:select>
+        <br>
+
+        Choose favorite language: <form:radiobuttons path="favoriteLang" items="${student.favoriteLanguageOptions}"/>
+        <br>
+        Choose operation system:
+        Linux <form:checkbox path="operationSystemOptions" value="Linux"/>
+        Windows <form:checkbox path="operationSystemOptions" value="Windows"/>
+        MacOS <form:checkbox path="operationSystemOptions" value="MacOS"/>
+
+        <%--        It's hardcoded variant--%>
+<%--        Favourite programming language:--%>
+<%--        Java: <for:radiobutton path="favoriteLang" value="Java"/>--%>
+<%--        Ruby: <for:radiobutton path="favoriteLang" value="Ruby"/>--%>
+<%--        C++: <for:radiobutton path="favoriteLang" value="C++"/>--%>
+<%--        C#: <for:radiobutton path="favoriteLang" value="C#"/>--%>
 
 <%--        It's hardcoded variant--%>
 <%--        <form:select path="country">--%>
