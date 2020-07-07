@@ -26,9 +26,8 @@
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-<!--	for resources-->
 	<mvc:resources mapping="/resources/**" location="/resources/"/>
-<!--for creating bean by .properties-->
+
 	<util:properties id="countryOptions" location="classpath:../countries.properties" />
 
 </beans>
