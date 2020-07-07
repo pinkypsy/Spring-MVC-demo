@@ -21,6 +21,8 @@ public class Student {
 
     //adding radio buttons w/ map
     private LinkedHashMap<String, String> favoriteLanguageOptions;
+    //adding checkboxes w/ map
+    private LinkedHashMap<String, String> operationSystemMap;
 
     public Student() {
         // populate favorite language options
@@ -31,6 +33,12 @@ public class Student {
         favoriteLanguageOptions.put("C#", "C#");
         favoriteLanguageOptions.put("PHP", "PHP");
         favoriteLanguageOptions.put("Ruby", "Ruby");
+
+        operationSystemMap = new LinkedHashMap<>();
+
+        operationSystemMap.put("Linux", "Linux");
+        operationSystemMap.put("MacOS", "MacOS");
+        operationSystemMap.put("Windows", "Windows");
     }
 
 
@@ -93,4 +101,7 @@ public class Student {
     }
 
 
+    public LinkedHashMap<String, String> getOperationSystemMap() {
+        return operationSystemMap;
+    }
 }

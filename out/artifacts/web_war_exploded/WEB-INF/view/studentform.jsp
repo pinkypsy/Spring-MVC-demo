@@ -31,10 +31,15 @@
 
         Choose favorite language: <form:radiobuttons path="favoriteLang" items="${student.favoriteLanguageOptions}"/>
         <br>
+
         Choose operation system:
-        Linux <form:checkbox path="operationSystemOptions" value="Linux"/>
-        Windows <form:checkbox path="operationSystemOptions" value="Windows"/>
-        MacOS <form:checkbox path="operationSystemOptions" value="MacOS"/>
+        <form:checkboxes path="operationSystemOptions" items="${student.operationSystemMap}"/>
+
+        <%--        It's hardcoded variant--%>
+        <%--        Choose operation system:--%>
+<%--        Linux <form:checkbox path="operationSystemOptions" value="Linux"/>--%>
+<%--        Windows <form:checkbox path="operationSystemOptions" value="Windows"/>--%>
+<%--        MacOS <form:checkbox path="operationSystemOptions" value="MacOS"/>--%>
 
         <%--        It's hardcoded variant--%>
 <%--        Favourite programming language:--%>
