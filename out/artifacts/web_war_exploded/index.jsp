@@ -11,15 +11,17 @@
 </head>
 
 <body>
-
+<%%>
 <h2>Spring MVC Demo - Home Page</h2>
 
 <a href="reqform">Request Form</a>
 <br>
-
 <a href="student/showForm">Student Processing Form</a>
 
-<br><br>
+<br>
+<a href="customer/showForm">Customer Registration Form</a>
+
+<br>
 
 <img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
 

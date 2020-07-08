@@ -28,8 +28,16 @@
 	</bean>
 <!--	for resources-->
 	<mvc:resources mapping="/resources/**" location="/resources/"/>
+
+<!--	load custom message resource-->
+<bean name="messageSource"
+	  class="org.springframework.context.support.ResourceBundleMessageSource">
+	<property name="basename" value="resources.messages"/>
+</bean>
+
+<!--	<mvc:resources mapping="/resources/**" location="view"/>-->
 <!--for creating bean by .properties-->
-	<util:properties id="countryOptions" location="classpath:../countries.properties" />
+	<util:properties id="countryOptions" location="classpath:resources/messages.properties" />
 
 </beans>
 

@@ -10,6 +10,7 @@ public class Student {
     private String country;
     private String favoriteLang;
     private String [] operationSystemOptions;
+    private int id = 5;
 
     public String[] getOperationSystemOptions() {
         return operationSystemOptions;
@@ -103,5 +104,9 @@ public class Student {
 
     public LinkedHashMap<String, String> getOperationSystemMap() {
         return operationSystemMap;
+    }
+
+    public int getId() {
+        return id;
     }
 }
