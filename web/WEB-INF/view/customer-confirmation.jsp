@@ -20,5 +20,8 @@ Postal Code: ${customer.postalCode}
 <br>
 Course Code: ${customer.courseCode}
 
+<br>
+<a href="/customer/showCustomerList">Back to customer list</a>
+
 </body>
 </html>

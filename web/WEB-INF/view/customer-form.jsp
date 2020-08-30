@@ -15,7 +15,7 @@
 <body>
 
 <form:form action="processedForm" modelAttribute="customer">
-
+    <form:hidden path="id"/>
     Fill out the form:
     <br>
     First name: <form:input path="firstName"/>

@@ -6,8 +6,8 @@
     Student Confirmation Form
     <title>Student Confirmation Form</title>
     <link rel="stylesheet" type="text/css"
-
-          href="${pageContext.request.contextPath}/resources/css/my-test.css">
+    <%--the correct app name in curly braces--%>
+    href="${pageContext.request.contextPath}/resources/css/my-test.css">
 </head>
 <body>
 <p>
@@ -17,18 +17,18 @@
     <br>
     Student LN: "${student.lastName}"
     <br>
-    Student A: "${student.age}"
+    Student Age: "${student.age}"
     <br>
     Student country: "${student.country}"
     <br>
     Favorite language: "${student.favoriteLang}"
     <br>
     Operation systems:
-    <ul>
-    <c:forEach var="temp" items="${student.operationSystemOptions}">
-    <li>${temp}</li>
+    <ol>
+    <c:forEach var="customer" items="${student.operationSystemOptions}">
+    <li>${customer}</li>
     </c:forEach>
-    </ul>
+    </ol>
 </p>
 <br>
 <p>

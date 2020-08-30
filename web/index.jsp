@@ -20,7 +20,8 @@
 
 <br>
 <a href="customer/showForm">Customer Registration Form</a>
-
+<br>
+<a href="customer/showCustomerList">Show customers</a>
 <br>
 
 <img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />
