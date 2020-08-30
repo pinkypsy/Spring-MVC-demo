@@ -50,7 +50,7 @@ public class CustomerFormController {
     }
 
     @RequestMapping("/showCustomerList")
-    public String showCustomers(Model model) {
+    public String showCustomerList(Model model) {
 
         List<Customer> customers = customerService.getCustomers();
 
